@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}opgg{% endblock %}
+{% block body %}
+<h1 class="text-center">OP.gg</h1>
+<form action="/opggresult">
+    소환사명 검색: <input type="text" name="q"><br>
+    티어 : <input type="text" name="tier"><br>
+    <input type="submit" value="뿅!">
+</form>
+{% endblock %}

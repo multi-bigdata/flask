@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}점심메뉴 추천{% endblock %}
+
+{% block body %}
+    {% if lunch == '김밥카페' %}
+        <h1>오늘 굶자......</h1>
+    {% else %}
+        <h1>{{lunch}} 먹으러가!!!!</h1>
+    {% endif %}
+    <hr/>
+        {% for menu in box %}
+            <p>{{menu}}</p>
+        {% endfor %}
+{% endblock %}
